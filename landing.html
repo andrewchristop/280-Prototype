@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="outer">
+            <h1 id="conf">Add Member Information </h1>
+            <hr>
+            <form id="info">
+                <br>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <br>
+                <label for="lname">Last Name:</label>
+                <input type="lname" id="lname" name="lname">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <label for="posassign">Position Assignment:</label>
+                <input type="posassign" id="posassign" name="posassign">
+                <br> <br>
+                <label for="comdate">Commencement Date:</label>
+                <input type="comdate" id="comdate" name="comdate">
+                <br><br>
+                <label for="termdate">Termination Date:</label>
+                <input type="termdate" id="termdate" name="termdate">
+                <br><br>
+                <input type="submit">
+            </form>
+            <br>
+            <br>
+            <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Position Assigned</th>
+                  <th>Commencement Date</th>
+                  <th>Termination Date</th>
+                </tr>
+                <tr>
+                  <td>Hans</td>
+                  <td>Landa</td>
+                  <td>CEO</td>
+                  <td>29 May 2020</td>
+                  <td>12 Feb 2021</td>
+
+                </tr>
+                <tr>
+                    <td>Mamoun</td>
+                    <td>Sharif</td>
+                    <td>CTO</td>
+                    <td>23 Feb 2020</td>
+                    <td>14 Feb 2022</td>
+                </tr>
+                <tr>
+                    <td>Frans</td>
+                    <td>Oberhauser</td>
+                    <td>CFO</td>
+                    <td>2 Mar 2020</td>
+                    <td>TBA</td>
+                </tr>
+              </table>
+              <br><br>
+              <p id="lol">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="interval">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+              <br>
+              <div id="inner">
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+              <br> <br>
+              <h1>Write an email</h1>
+              <hr>
+              <form id="usrform">
+                To: <input type="text" name="usrname">
+                <input type="submit">
+              </form>
+              <br>
+              <div class="msg">
+                <textarea id="msg" name="msg" rows="20" cols="80" >
+                    Enter message here...
+                </textarea>
+              </div>
+              <br>
+              <br>
+              <h1>Branch Information</h1>
+              <hr>
+              <br>
+              <form id="branch">
+                <label for="bname">Branch Name:</label>
+                <input type="text" id="bname" name="bname">
+                <br>
+                <br>
+                <label for="loc">Location:</label>
+                <input type="loc" id="loc" name="loc">
+                <br>
+                <br>
+                <label for="status">Status:</label>
+                <input type="status" id="status" name="status">
+                <br><br>
+                <input type="submit">
+            </form>
+            <br>
+            <br>
+            <table>
+                <tr>
+                  <th>Branch Name</th>
+                  <th>Location</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Branch A</td>
+                  <td>California</td>
+                  <td>Approved</td>
+
+                </tr>
+                <tr>
+                    <td>Branch B</td>
+                    <td>Virginia</td>
+                    <td>Not Approved</td>
+                </tr>
+                <tr>
+                    <td>Branch C</td>
+                    <td>Indiana</td>
+                    <td>Pending</td>
+                </tr>
+              </table>
+            <br>
+            <br>
+            <div id ="logout">
+                <form action="index.html">
+                    <button type="btn">Log Out</button>
+                </form>
+                <br><br>
+            </div>
+
+        </div>
+    </body>
+</html>
