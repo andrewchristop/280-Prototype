@@ -7,10 +7,11 @@
     <body>
         <script src="script.js"></script>
         <div id="outer">
-            <h1 id="conf">Add Member Information </h1>
+            <h1 id="conf">View Member Information </h1>
             <hr>
             <form id="info">
                 <br>
+                <h1>Add Member Information</h1>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
                 <br>
@@ -102,6 +103,7 @@
               <h1>Branch Information</h1>
               <hr>
               <br>
+              <h1>Add Branch</h1>
               <form id="branch">
                 <label for="bname">Branch Name:</label>
                 <input type="text" id="bname" name="bname">
@@ -145,9 +147,78 @@
             <br>
             <div id ="logout">
                 <form action="index.html">
-                    <button type="btn" onclick="logout()">Log Out</button>
+                    <button type="btn" class="logout" onclick="logout()">Log Out</button>
                 </form>
                 <br><br>
+            </div>
+
+            <div id="finances">
+              <h1>Generate Financial Report</h1>
+              <hr>
+
+              <p id="sel">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="int">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+
+              <div id="sto">
+                <br>
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+
+            </div>
+
+            <div id="receipt">
+              <br>
+              <br><br><br>
+              <h1>Generate Receipt of Paying Members</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Membership Type</th>
+                  <th>Amount Paid</th>
+                  <th>Date due</th>
+                  <th>Receipt</th>
+                </tr>
+                <tr>
+                  <td>Katie</td>
+                  <td>Duc</td>
+                  <td>Lifetime</td>
+                  <td>100</td>
+                  <td>21 Jan 2022</td>
+                  <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+
+                </tr>
+                <tr>
+                    <td>Kelly</td>
+                    <td>Duc</td>
+                    <td>Honorary</td>
+                    <td>50</td>
+                    <td>14 Feb 2022</td>
+                    <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+                </tr>
+                <tr>
+                    <td>Jian</td>
+                    <td>Yang</td>
+                    <td>Lifetime</td>
+                    <td>100</td>
+                    <td>14 March 2022</td>
+                    <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+                </tr>
+              </table>
+
+              <br><br>
+
             </div>
 
         </div>

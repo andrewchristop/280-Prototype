@@ -7,3 +7,7 @@ function pressed(){
 function logout(){
     alert("You have successfully been logged out!");
 }
+
+function recei(){
+    alert("Receipt for customer bill has been generated!")
+}

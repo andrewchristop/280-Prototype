@@ -89,7 +89,7 @@ select{
     margin: 0 auto;
 }
 
-#lol{
+#lol, #sel{
     text-align: center;
 }
 
@@ -116,3 +116,35 @@ tr:hover{
     display: flex;
     justify-content: center;
 }
+
+button, input[type=submit]{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 3px;
+}
+
+input[type=submit], #repgen, .receipt{
+    background-color: rgb(75, 143, 250);
+    color: #fff;
+}
+
+input[type=submit]:hover, #repgen:hover, .receipt:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.logout{
+    background-color: red;
+    color: #fff;
+}
+
