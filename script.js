@@ -15,3 +15,7 @@ function recei(){
 function pop(){
     alert("Report for population has been generated!")
 }
+
+function notif(){
+    alert("You have chosen to notify the late paying member")
+}
