@@ -19,3 +19,19 @@ function pop(){
 function notif(){
     alert("You have chosen to notify the late paying member")
 }
+
+function approve(){
+    alert("New account has been approved and member information has been stored")
+}
+
+function checkmem1(){
+    alert("User has a honorary membership")
+}
+
+function checkmem2(){
+    alert("User has a lifetime membership")
+}
+
+function checkmem3(){
+    alert("User has a honorary membership")
+}

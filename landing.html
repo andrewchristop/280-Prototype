@@ -9,9 +9,43 @@
         <div id="outer">
             <h1 id="conf">View Member Information </h1>
             <hr>
+            <form id="sear">
+              <label for="sea">Search Member</label>
+              <input type="memname" id="memname" name="memname">
+              <input type="submit">
+              <br><br>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Date Joined</th>
+                  <th>Check Membership Status</th>
+                </tr>
+                <tr>
+                  <td>Briseis</td>
+                  <td>Jeanne</td>
+                  <td>2 Mar 2005</td>
+                  <td><button class="checkmem" onclick="checkmem1()">Check Membership</button></td>
+                </tr>
+                <tr>
+                  <td>Titilayo</td>
+                  <td>Karen</td>
+                  <td>1 Jan 2002</td>
+                  <td><button class="checkmem" onclick="checkmem2()">Check Membership</button></td>
+                </tr>
+                <tr>
+                  <td>Carme</td>
+                  <td>Adelais</td>
+                  <td>14 Feb 2002</td>
+                  <td><button class="checkmem" onclick="checkmem3()">Check Membership</button></td>
+                </tr>
+              </table>
+
+            </form>
             <form id="info">
                 <br>
                 <h1>Add Member Information</h1>
+                <hr>
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
                 <br>
@@ -300,6 +334,57 @@
                       <td><button class="notif" onclick="notif()">Notify</button></td>
                     </form>
                 </tr>
+              </table>
+            </div>
+
+            <br>
+            <div id="appr">
+              <br><h1>Approve and store information of new members</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Membership Type</th>
+                  <th>Date Account Created</th>
+                  <th>Approve</th>
+                </tr>
+                <tr>
+                  <td>Mari</td>
+                  <td>Noemi</td>
+                  <td>Lifetime</td>
+                  <td>2 April 2022</td>
+                  <td><button class="apr" onclick="approve()">Approve</button></td>
+
+                </tr>
+                <tr>
+                    <td>Antonela</td>
+                    <td>Miroslava</td>
+                    <td>Lifetime</td>
+                    <td>14 Feb 2022</td>
+                    <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+                <tr>
+                    <td>Lucia</td>
+                    <td>Tamar</td>
+                    <td>Honorary</td>
+                    <td>1 March 2022</td>
+                    <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+                <tr>
+                  <td>Zhaklina</td>
+                  <td>Aurora</td>
+                  <td>Honorary</td>
+                  <td>11 March 2022</td>
+                  <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+              <tr>
+                <td>Oluwayesi</td>
+                <td>Zosime</td>
+                <td>Honorary</td>
+                <td>1 March 2022</td>
+                <td><button class="apr" onclick="approve()">Approve</button></td>
+              </tr>
               </table>
             </div>
 
