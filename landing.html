@@ -10,7 +10,7 @@
             <h1 id="conf">View Member Information </h1>
             <hr>
             <form id="sear">
-              <label for="sea">Search Member</label>
+              <label for="sea">Query Board Member</label>
               <input type="memname" id="memname" name="memname">
               <input type="submit">
               <br><br>
@@ -18,28 +18,58 @@
                 <tr>
                   <th>First Name</th>
                   <th>Last Name</th>
-                  <th>Date Joined</th>
-                  <th>Check Membership Status</th>
+                  <th>Position Assigned</th>
+                  <th>Commencement Date</th>
+                  <th>Termination Date</th>
                 </tr>
                 <tr>
-                  <td>Briseis</td>
-                  <td>Jeanne</td>
-                  <td>2 Mar 2005</td>
-                  <td><button class="checkmem" onclick="checkmem1()">Check Membership</button></td>
+                  <td>Michael</td>
+                  <td>Kubis</td>
+                  <td>Board of Director Member</td>
+                  <td>29 May 2020</td>
+                  <td>12 Feb 2021</td>
+
                 </tr>
                 <tr>
-                  <td>Titilayo</td>
-                  <td>Karen</td>
-                  <td>1 Jan 2002</td>
-                  <td><button class="checkmem" onclick="checkmem2()">Check Membership</button></td>
-                </tr>
+                    <td>Vincent</td>
+                    <td>Gabcik</td>
+                    <td>Board of Director Member</td>
+                    <td>23 Feb 2020</td>
+                    <td>14 Feb 2022</td>
                 <tr>
-                  <td>Carme</td>
-                  <td>Adelais</td>
-                  <td>14 Feb 2002</td>
-                  <td><button class="checkmem" onclick="checkmem3()">Check Membership</button></td>
+                    <td>Vincent</td>
+                    <td>Markinson</td>
+                    <td>Board of Director Member</td>
+                    <td>2 Mar 2020</td>
+                    <td>TBA</td>
                 </tr>
               </table>
+
+              <p id="lol">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="interval">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+              <br>
+              <div id="inner">
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+
+              <h1 id="conf">View Board Member Info </h1>
+            <hr>
+            <form id="dkaa">
+              <label for="sea">Search Member</label>
+              <input type="memname" id="memname" name="memname">
+              <input type="submit">
+              <br><br>
+              
 
             </form>
             <form id="info">
@@ -134,6 +164,7 @@
               </div>
               <br>
               <br>
+
               <h1>Branch Information</h1>
               <hr>
               <br>
@@ -385,6 +416,45 @@
                 <td>1 March 2022</td>
                 <td><button class="apr" onclick="approve()">Approve</button></td>
               </tr>
+              </table>
+            </div>
+
+            <br><br>
+
+            <div id="Upcoming meetings">
+              <h1>Notify Members of Upcoming Meetings</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>Upcoming event</th>
+                  <th>Date of upcoming event</th>
+                  <th>Time</th>
+                  <th>Notify</th>
+                </tr>
+                <tr>
+                  <td>Board members meeting</td>
+                  <td>4 April 2022</td>
+                  <td>16:30</td>
+                  <form action="notify.html">
+                    <td><button class="notify" onclick="notify()">Notify</button></td>
+                  </form>
+                </tr>
+                <tr>
+                    <td>Branch meeting</td>
+                    <td>5 April 2022</td>
+                    <td>14:30</td>
+                    <form action="notify.html">
+                      <td><button class="notify" onclick="notify()">Notify</button></td>
+                    </form>
+                </tr>
+                <tr>
+                    <td>Budget Meeting</td>
+                    <td>15 April 2022</td>
+                    <td>11:30</td>
+                    <form action="notify.html">
+                      <td><button class="notify" onclick="notify()">Notify</button></td>
+                    </form>
+                </tr>
               </table>
             </div>
 

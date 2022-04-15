@@ -19,6 +19,9 @@ function pop(){
 function notif(){
     alert("You have chosen to notify the late paying member")
 }
+function notify(){
+    alert("You have chosen to notify the members to upcoming event")
+}
 
 function approve(){
     alert("New account has been approved and member information has been stored")
@@ -34,4 +37,8 @@ function checkmem2(){
 
 function checkmem3(){
     alert("User has a honorary membership")
+}
+
+function send(){
+    alert("Message is sent")
 }
